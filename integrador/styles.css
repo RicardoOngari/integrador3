@@ -1,0 +1,207 @@
+/* Estilo geral do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F4F4F9; /* Um tom suave de cinza claro */
+    color: #333; /* Cor do texto */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo do título */
+h1 {
+    text-align: center;
+    color: #3A3D98; /* Azul escuro */
+    font-size: 2.5em; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra para o título */
+}
+
+/* Estilo do formulário */
+form {
+    background-color: white;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 30px;
+    margin: auto;
+    max-width: 500px; /* Largura máxima do formulário */
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 15px; /* Aumenta o padding */
+    margin-bottom: 15px;
+    border: 1px solid #CED4DA; /* Borda padrão */
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave para a borda */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #3A3D98; /* Azul escuro ao focar */
+    box-shadow: 0 0 5px rgba(58, 61, 152, 0.5); /* Sombra ao focar */
+}
+
+/* Estilo do botão de envio */
+button {
+    background-color: #3A3D98; /* Azul escuro */
+    color: white;
+    border: none;
+    padding: 15px 25px; /* Aumenta o padding */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em; /* Tamanho da fonte */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave para o fundo e transformação */
+}
+
+button:hover {
+    background-color: #2A2D6C; /* Azul mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* Levanta ligeiramente o botão ao passar o mouse */
+}
+
+/* Estilo da lista de receitas */
+#recipe-list {
+    margin-top: 30px;
+}
+
+/* Estilo dos itens da receita */
+.recipe-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave nos itens */
+    transition: transform 0.2s ease; /* Transição suave para o efeito de hover */
+}
+
+.recipe-item h3 {
+    margin-top: 0; /* Remove margem superior do título da receita */
+    color: #3A3D98; /* Azul escuro para os títulos das receitas */
+}
+
+/* Estilo dos botões de excluir e editar dentro dos itens da receita */
+button.btn-excluir {
+    background-color: #dc3545; /* Vermelho */
+}
+
+button.btn-excluir:hover {
+    background-color: #c82333; /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* Espaço entre os botões */
+.recipe-item button {
+    margin-right: 10px; /* Espaço entre os botões */
+}
+
+/* Adicionando um efeito de hover nos itens da receita */
+.recipe-item:hover {
+   transform: translateY(-5px); /* Levanta ligeiramente o item ao passar o mouse */
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra mais intensa ao passar o mouse */
+}
+
+/* Estilo para campos de arquivo */
+input[type="file"] {
+   padding: 10px; /* Ajusta o padding */
+   border: 1px solid #CED4DA; 
+      /* Borda padrão */
+      border-radius: 5px; /* Bordas arredondadas */
+      background: #e9ecef; /* Fundo suave */
+      cursor: pointer; 
+      transition: background 0.3s ease, border-color 0.3s ease; /* Transição suave */
+   }
+   
+   input[type="file"]:hover {
+      background: #dcdcdc; /* Muda o fundo ao passar o mouse */
+      border-color: #3A3D98; /* Muda a cor da borda ao passar o mouse */
+   }
+   
+   /* Estilo para mensagens de erro ou sucesso */
+   .message {
+       padding: 10px;
+       border-radius: 5px;
+       margin-top: 20px;
+       font-size: 1em;
+   }
+   
+   .message.success {
+       background-color: #d4edda; /* Verde claro */
+       color: #155724; /* Texto verde escuro */
+       border: 1px solid #c3e6cb; /* Borda verde */
+   }
+   
+   .message.error {
+       background-color: #f8d7da; /* Vermelho claro */
+       color: #721c24; /* Texto vermelho escuro */
+       border: 1px solid #f5c6cb; /* Borda vermelha */
+   }
+   
+   /* Estilo para links */
+   a {
+       color: #3A3D98; /* Azul escuro */
+       text-decoration: none; /* Remove sublinhado */
+       transition: color 0.3s ease; /* Transição suave para a cor */
+   }
+   
+   a:hover {
+       color: #2A2D6C; /* Azul mais escuro ao passar o mouse */
+   }
+   
+   /* Estilo para rodapé */
+   footer {
+       text-align: center;
+       margin-top: 40px;
+       font-size: 0.9em; /* Tamanho da fonte do rodapé */
+       color: #6c757d; /* Cor do texto do rodapé */
+   }
+   
+   /* Adicionando uma animação ao carregar a página */
+   @keyframes fadeIn {
+       from {
+           opacity: 0;
+       }
+       to {
+           opacity: 1;
+       }
+   }
+   
+   body {
+       animation: fadeIn 0.5s ease; /* Animação de fade in */
+   }
+   
+   /* Estilo para botões secundários */
+   button.secondary {
+       background-color: #6c757d; /* Cinza */
+       color: white;
+   }
+   
+   button.secondary:hover {
+       background-color: #5a6268; /* Cinza escuro ao passar o mouse */
+   }
+   
+   /* Estilo para cabeçalhos de seção */
+   h2 {
+       color: #3A3D98; /* Azul escuro */
+       margin-top: 30px; /* Espaço acima do cabeçalho */
+       margin-bottom: 15px; /* Espaço abaixo do cabeçalho */
+   }
+   
+   /* Estilo para listas */
+   ul {
+       list-style-type: none; /* Remove marcadores de lista */
+       padding: 0; /* Remove padding padrão */
+   }
+   
+   ul li {
+       background-color: #f8f9fa; /* Fundo da lista */
+       border-radius: 5px; /* Bordas arredondadas */
+       padding: 10px;
+       margin-bottom: 10px; /* Espaço entre os itens da lista */
+       transition: background 0.3s ease; /* Transição suave para o fundo */
+   }
+   
+   ul li:hover {
+       background-color: #e9ecef; /* Fundo mais escuro ao passar o mouse */
+   }
